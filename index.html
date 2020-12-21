@@ -360,7 +360,47 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn" data-modal-close><img src="./images/sprite/close-black.svg" alt="close-black"></button>
+        <button type="button" class="close-btn" data-modal-close><img src="./images/sprite/close-black.svg"
+                                                                      alt="close-black"></button>
+        <form action="#" class="modal__form">
+            <p class="modal__form-action">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="modal__form-field">
+                Имя
+                <span class="modal__form-input-wrapper">
+                    <input type="text" class="modal__form-input" name="user_name">
+                    <svg class="modal__form-icon">
+                        <use href="./images/sprite/modal.svg#icon-person"></use>
+                    </svg>
+                </span>
+            </label>
+            <label class="modal__form-field">
+                Телефон
+                <span class="modal__form-input-wrapper">
+                <input type="tel" class="modal__form-input" name="user_tel">
+                <svg class="modal__form-icon">
+                    <use href="./images/sprite/modal.svg#icon-phone"></use>
+                </svg>
+               </span>
+            </label>
+            <label class="modal__form-field">
+                Почта
+                <span class="modal__form-input-wrapper">
+                <input type="email" class="modal__form-input" name="user_mail">
+                <svg class="modal__form-icon">
+                    <use href="./images/sprite/modal.svg#icon-email"></use>
+                </svg>
+                </span>
+            </label>
+            <label class="modal__form-field">
+                Комментарий
+                <textarea name="user_message" class="modal__form-message" placeholder="Введите текст"></textarea>
+            </label>
+            <input id="user-policy" type="checkbox" name="user_policy" class="modal__form-policy visually-hidden" value="accept-policy">
+            <label for="user-policy" class="modal__form-policy "><span class="modal__form-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                договора</a></span>
+            </label>
+            <button type="submit" class="modal__form-btn">Отправить</button>
+        </form>
     </div>
 </div>
 
