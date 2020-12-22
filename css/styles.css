@@ -609,7 +609,7 @@ img {
 }
 
 .footer__form {
-    margin-left: 93px;
+    margin-left: 104px;
 }
 
 .footer__form-info {
@@ -640,6 +640,7 @@ img {
     margin-right: 12px;
 
 }
+
 
 .footer__form-input::placeholder {
     font-family: 'Roboto', sans-serif;
