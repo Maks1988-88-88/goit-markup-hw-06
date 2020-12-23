@@ -354,8 +354,10 @@
                     </a></li>
                 </ul>
             </div>
+            <div class="footer__mailing">
             <form action="#" class="footer__form">
                 <p class="footer__form-info">Подпишитесь на рассылку</p>
+                <div class="footer__form-wrapper">
                 <label class="footer__form-field">
                     <input type="text" class="footer__form-input" placeholder="E-mail" name="user_mail">
                 </label>
@@ -363,7 +365,9 @@
                     <img src="./images/sprite/icon_send.svg" alt="footer__icon" class="footer__form-btn-icon">
                 </span>
                 </button>
+                </div>
             </form>
+            </div>
         </address>
     </div>
 </footer>
@@ -375,7 +379,7 @@
         <form action="#" class="modal__form">
             <p class="modal__form-action">Оставьте свои данные, мы вам перезвоним</p>
             <label class="modal__form-field">
-                Имя
+                <span class="modal__form-name">Имя</span>
                 <span class="modal__form-input-wrapper">
                     <input type="text" class="modal__form-input" name="user_name">
                     <svg class="modal__form-icon">
@@ -384,7 +388,7 @@
                 </span>
             </label>
             <label class="modal__form-field">
-                Телефон
+                <span class="modal__form-name">Телефон</span>
                 <span class="modal__form-input-wrapper">
                 <input type="tel" class="modal__form-input" name="user_tel">
                 <svg class="modal__form-icon">
@@ -393,7 +397,7 @@
                </span>
             </label>
             <label class="modal__form-field">
-                Почта
+                <span class="modal__form-name">Почта</span>
                 <span class="modal__form-input-wrapper">
                 <input type="email" class="modal__form-input" name="user_mail">
                 <svg class="modal__form-icon">
@@ -401,12 +405,15 @@
                 </svg>
                 </span>
             </label>
-            <label class="modal__form-field">
-                Комментарий
-                <textarea name="user_message" class="modal__form-message" placeholder="Введите текст"></textarea>
+            <label class="modal__form-field-comment" for="comment">
+                <span class="modal__form-name">Комментарий</span>
             </label>
-            <input id="user-policy" type="checkbox" name="user_policy" class="modal__form-policy visually-hidden" value="accept-policy">
-            <label for="user-policy" class="modal__form-policy "><span class="modal__form-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                <textarea id="comment" name="user_message" class="modal__form-message" placeholder="Введите текст"></textarea>
+
+            <input id="user-policy" type="checkbox" name="user_policy" class="modal__form-policy visually-hidden"
+                   value="accept-policy">
+            <label for="user-policy" class="modal__form-policy "><span class="modal__form-text">Соглашаюсь с рассылкой и принимаю <a
+                    href="">Условия
                 договора</a></span>
             </label>
             <button type="submit" class="modal__form-btn">Отправить</button>
