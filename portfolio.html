@@ -182,6 +182,7 @@
 </main>
 <footer class="footer">
     <div class="container">
+        <!--        <a href="#" aria-label="логотип сайта" class="footer-logo"><span>Web</span>Studio</a>-->
         <address class="footer-address">
             <div>
                 <a href="#" aria-label="логотип сайта" class="footer-logo"><span>Web</span>Studio</a>
@@ -225,16 +226,20 @@
                     </a></li>
                 </ul>
             </div>
-            <form action="#" class="footer__form">
-                <p class="footer__form-info">Подпишитесь на рассылку</p>
-                <label class="footer__form-wrapper">
-                    <input type="text" class="footer__form-input" placeholder="E-mail" name="user_mail">
-                </label>
-                <button type="submit" class="footer__form_btn"><span class="footer__form_btn-wrapper">Подписаться
+            <div class="footer__mailing">
+                <form action="#" class="footer__form">
+                    <p class="footer__form-info">Подпишитесь на рассылку</p>
+                    <div class="footer__form-wrapper">
+                        <label class="footer__form-field">
+                            <input type="text" class="footer__form-input" placeholder="E-mail" name="user_mail">
+                        </label>
+                        <button type="submit" class="footer__form_btn"><span class="footer__form_btn-wrapper">Подписаться
                     <img src="./images/sprite/icon_send.svg" alt="footer__icon" class="footer__form-btn-icon">
                 </span>
-                </button>
-            </form>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </address>
     </div>
 </footer>
